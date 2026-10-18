@@ -1028,3 +1028,83 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Claude AI Mobile UX Recommendations & Fixes */
+
+/* 1. Cozy Nav Horizontal Scroll (No visible scrollbar) */
+.cozy-nav {
+    display: flex;
+    gap: 6px;
+    background: #F3EBDD;
+    padding: 6px;
+    border-radius: 16px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+.cozy-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.nav-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    min-height: 40px;
+}
+
+/* Settings Gear Button */
+.settings-gear-btn {
+    background: #F3EBDD;
+    border: 1px solid #E8DCC8;
+    color: #3D2B1F;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+.settings-gear-btn:hover {
+    background: #E8DCC8;
+}
+
+/* 4. Todo Item Text Clipping Fix */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: #FAF5EC;
+    border: 1px solid #E8DCC8;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+
+.todo-item span:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.todo-actions {
+    flex-shrink: 0;
+}
+
+/* 6. Flexible Responsive Profile Name */
+.profile-name {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    font-weight: 900;
+    color: #3D2B1F;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+/* 7. Touch Targets & Spacing consistency */
+button, input, select, textarea {
+    min-height: 40px;
+}

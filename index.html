@@ -19,14 +19,16 @@
                 </div>
             </div>
             
-            <nav class="cozy-nav">
-                <button class="nav-btn active" onclick="switchTab('vault')">🐾 Vault</button>
-                <button class="nav-btn" onclick="switchTab('todo')">📝 To-Do</button>
-                <button class="nav-btn" onclick="switchTab('profile')">👤 Profil</button>
-                <button class="nav-btn" onclick="switchTab('showcase')">🎨 Showcase</button>
-            </nav>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <nav class="cozy-nav">
+                    <button class="nav-btn active" onclick="switchTab('vault')">🐾 Vault</button>
+                    <button class="nav-btn" onclick="switchTab('todo')">📝 To-Do</button>
+                    <button class="nav-btn" onclick="switchTab('profile')">👤 Profil</button>
+                    <button class="nav-btn" onclick="switchTab('showcase')">🎨 Showcase</button>
+                </nav>
+                <button onclick="openSettings()" title="Pengaturan Database" class="settings-gear-btn">⚙️</button>
+            </div>
 
-            <button onclick="openSettings()" title="Pengaturan Database Supabase" style="background: #F3EBDD; border: 1px solid #E8DCC8; padding: 8px 12px; border-radius: 50%; cursor: pointer; font-size: 0.9em; margin-right: 8px;" class="nav-btn">⚙️</button>
             <div class="header-profile" onclick="switchTab('profile')" title="Lihat Profil">
                 <img id="headerAvatarImg" src="assets/Ayam.webp" alt="Active Avatar" class="header-avatar">
                 <div class="header-user-info">
