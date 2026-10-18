@@ -866,3 +866,165 @@ footer {
 .reset-chip-btn:hover {
     background: #F8D7DA;
 }
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN (Media Queries)
+   ========================================= */
+@media (max-width: 768px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    /* Cozy Header Mobile */
+    .cozy-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        align-items: stretch;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .cozy-nav {
+        justify-content: center;
+        overflow-x: auto;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 0.85em;
+        white-space: nowrap;
+    }
+
+    .header-profile {
+        justify-content: center;
+        margin-top: 4px;
+    }
+
+    /* Hero Banner Mobile */
+    .hero-banner {
+        padding: 16px 20px;
+        border-radius: 16px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.25em;
+    }
+
+    /* View Sections Mobile */
+    .view-section {
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .section-header-flex {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .progress-pill {
+        align-self: flex-start;
+    }
+
+    /* Animal Grid Mobile */
+    .animal-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .animal-card {
+        padding: 12px 6px;
+    }
+
+    .animal-card img {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Profile Card Mobile */
+    .profile-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .card-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile-bio {
+        text-align: left;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Todo Toolbar Mobile */
+    .todo-form-container {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .todo-main-row {
+        flex-direction: column;
+    }
+
+    .todo-main-row button {
+        width: 100%;
+    }
+
+    .todo-sub-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .deadline-picker-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .quick-chips {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    /* Showcase Grid Mobile */
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-card {
+        width: 95%;
+        padding: 20px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .animal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
